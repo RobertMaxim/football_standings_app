@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomepageFragment">
+
+    <fragment
+        android:id="@+id/HomepageFragment"
+        android:name="com.example.myapplication.Models.Fragments.HomepageFragment"
+        android:label="@string/homepage_fragment_label"
+        tools:layout="@layout/leagues_page">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/PremierLeagueFragment" />
+        <action
+            android:id="@+id/action_HomepageFragment_to_ligueUneFragment"
+            app:destination="@id/ligueUneFragment" />
+        <action
+            android:id="@+id/action_HomepageFragment_to_bundesligaFragment"
+            app:destination="@id/bundesligaFragment" />
+        <action
+            android:id="@+id/action_HomepageFragment_to_laLigaFragment"
+            app:destination="@id/laLigaFragment" />
+        <action
+            android:id="@+id/action_HomepageFragment_to_serieAFragment"
+            app:destination="@id/serieAFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PremierLeagueFragment"
+        android:name="com.example.myapplication.Models.Fragments.PremierLeagueFragment"
+        android:label="@string/premier_league_fragment_label"
+        tools:layout="@layout/premier_league">
+
+        <action
+            android:id="@+id/action_PremierLeagueFragment_self"
+            app:destination="@id/PremierLeagueFragment" />
+        <action
+            android:id="@+id/action_PremierLeagueFragment_to_HomepageFragment"
+            app:destination="@id/HomepageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ligueUneFragment"
+        android:name="com.example.myapplication.Models.Fragments.LigueUneFragment"
+        android:label="@string/ligue_une_fragment_label"
+        tools:layout="@layout/ligueune">
+        <action
+            android:id="@+id/action_ligueUneFragment_to_HomepageFragment"
+            app:destination="@id/HomepageFragment" />
+        <action
+            android:id="@+id/action_ligueUneFragment_self"
+            app:destination="@id/ligueUneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bundesligaFragment"
+        android:name="com.example.myapplication.Models.Fragments.BundesligaFragment"
+        android:label="@string/bundesliga_fragment_label"
+        tools:layout="@layout/bundesliga">
+        <action
+            android:id="@+id/action_bundesligaFragment_to_HomepageFragment"
+            app:destination="@id/HomepageFragment" />
+        <action
+            android:id="@+id/action_bundesligaFragment_self"
+            app:destination="@id/bundesligaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/laLigaFragment"
+        android:name="com.example.myapplication.Models.Fragments.LaLigaFragment"
+        android:label="@string/la_liga_fragment_label">
+        <action
+            android:id="@+id/action_laLigaFragment_to_HomepageFragment"
+            app:destination="@id/HomepageFragment" />
+        <action
+            android:id="@+id/action_laLigaFragment_self"
+            app:destination="@id/laLigaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/serieAFragment"
+        android:name="com.example.myapplication.Models.Fragments.SerieAFragment"
+        android:label="@string/serie_a_fragment_label">
+        <action
+            android:id="@+id/action_serieAFragment_to_HomepageFragment"
+            app:destination="@id/HomepageFragment" />
+        <action
+            android:id="@+id/action_serieAFragment_self"
+            app:destination="@id/serieAFragment" />
+    </fragment>
+</navigation>

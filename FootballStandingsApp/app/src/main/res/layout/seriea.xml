@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Models.Fragments.SerieAFragment"
+    android:background="@drawable/background">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="132dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="9dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="Standing"
+        app:layout_constraintBottom_toTopOf="@+id/myTable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:ignore="DuplicateClickableBoundsCheck" />
+
+    <TextView
+        android:id="@+id/textview_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toTopOf="@id/button_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="144dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="688dp"
+        android:layout_marginBottom="94dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="@string/previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_second" />
+
+    <TableLayout
+        android:id="@+id/myTable"
+        android:layout_width="394dp"
+        android:layout_height="504dp"
+        android:layout_margin="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:shrinkColumns="0"
+        android:stretchColumns="1"
+        app:layout_constraintBottom_toTopOf="@+id/button_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_marginBaseline="1dp"
+        android:scrollbars="vertical"
+        android:verticalScrollbarPosition="right">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="37dp"
+                android:layout_height="wrap_content"
+                android:text="No."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="Team"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:text="Played"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:text="Points"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="49dp"
+                android:layout_height="match_parent"
+                android:text="Wins"
+                android:textSize="16sp" />
+        </TableRow>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            >
+        </LinearLayout>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="389dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="62dp"
+        android:fontFamily="serif-monospace"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/serie_a_welcome"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/myTable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.73" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="132dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="9dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="Matches"
+        app:layout_constraintBottom_toTopOf="@+id/myTable"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

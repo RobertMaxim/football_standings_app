@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="homepage_fragment_label">Homepage</string>
+    <string name="premier_league_fragment_label">Premier League Page</string>
+    <string name="serie_a_fragment_label">Serie A Page</string>
+    <string name="bundesliga_fragment_label">Bundesliga Page</string>
+    <string name="la_liga_fragment_label">La Liga Page</string>
+    <string name="ligue_une_fragment_label">Ligue 1 Page</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="premier_league">Premier League</string>
+    <string name="la_liga">La Liga Santander</string>
+    <string name="serie_a">Serie A</string>
+    <string name="ligue_une">Ligue 1</string>
+    <string name="bundesliga">Bundesliga</string>
+    <string name="leagues_page">Football live standings</string>
+    <string name="premier_league_welcome">Welcome to PL standing</string>
+    <string name="ligue_une_welcome">Welcome to Ligue 1 standing</string>
+    <string name="bundesliga_welcome">Welcome to Bundesliga standing</string>
+    <string name="la_liga_welcome">Welcome to La Liga standing</string>
+    <string name="serie_a_welcome">Welcome to Serie A standing</string>
+</resources>
