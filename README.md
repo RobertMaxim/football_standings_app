@@ -1,1 +1,3 @@
 # football_standings_app
+
+This app was created using Android Studio IDE and Java programming language, it was developed specially for football lovers which want to be up to date with latest changes in the standings of top 5 leagues. Having the strongest leagues in Europe, we can access the standing for each and matches tab which will show us the matches with the final score. It was developed with the help of https://www.football-data.org/ external API, making possible to have the latest leaderboard changes and latest scores.
